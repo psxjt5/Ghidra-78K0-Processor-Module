@@ -13,6 +13,6 @@ When loading a Binary into Ghidra, select the "..." button next to the Language 
 
 ![GhidraLoader](https://github.com/user-attachments/assets/9306000d-677c-48b3-bf22-29ec144fe570)
 
-To begin disassembling, select the first instruction, right-click and select ```Disassemble```.
+To begin disassembling, select the first instruction, right-click and select ```Disassemble``` (or press the 'D' key).
 
 
