@@ -1,4 +1,4 @@
-# sleigh specification file for NEC 78K
+# sleigh specification file for NEC 78K0
 
 ## General Parameters
 define endian=little;
@@ -50,4 +50,4 @@ define register offset=0x60 size=1 [ PSW ];
 
 
 # Include contents of 78K.sinc file
-@include "78K.sinc"
+@include "78K0.sinc"

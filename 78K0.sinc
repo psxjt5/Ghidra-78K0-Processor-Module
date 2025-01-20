@@ -1,4 +1,4 @@
-# sleigh include file for NEC 78K language instructions
+# sleigh include file for NEC 78K0 language instructions
 
 #########################
 ##  Tokens and Fields  ##
