@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<processor_spec>
+
+  <programcounter register="PC"/>
+  
+  <default_symbols>
+  
+  	<!-- Vector Table Area -->
+  	<symbol		  name="RST"			address="raw:0x0" />
+  	<symbol		  name="INTLVI"			address="raw:0x4" />
+  	<symbol		  name="INTP0"			address="raw:0x6" />
+  	<symbol		  name="INTP1"			address="raw:0x8" />
+  	<symbol		  name="INTP2"			address="raw:0xA" />
+  	<symbol		  name="INTP3"			address="raw:0xC" />
+  	<symbol		  name="INTP4"			address="raw:0xE" />
+  	<symbol		  name="INTP5"			address="raw:0x10" />
+  	<symbol		  name="INTSRE6"		address="raw:0x12" />
+  	<symbol		  name="INTSR6"			address="raw:0x14" />
+  	<symbol		  name="INTST6"			address="raw:0x16" />
+  	<symbol		  name="INTCSI10/INTST0"	address="raw:0x18" />
+  	<symbol		  name="INTTMH1"		address="raw:0x1A" />
+  	<symbol		  name="INTTMH0"		address="raw:0x1C" />
+  	<symbol		  name="INTTM50"		address="raw:0x1E" />
+  	<symbol		  name="INTTM000"		address="raw:0x20" />
+  	<symbol		  name="INTTM010"		address="raw:0x22" />
+  	<symbol		  name="INTAD"			address="raw:0x24" />
+  	<symbol		  name="INTSR0"			address="raw:0x26" />
+  	<symbol		  name="INTWTI"			address="raw:0x28" />
+  	<symbol		  name="INTTM51"		address="raw:0x2A" />
+  	<symbol		  name="INTKR"			address="raw:0x2C" />
+  	<symbol		  name="INTWT"			address="raw:0x2E" />
+  	<symbol		  name="INTP6"			address="raw:0x30" />
+  	<symbol		  name="INTP7"			address="raw:0x32" />
+  	<symbol		  name="INTDMU"			address="raw:0x34" />
+  	<symbol		  name="INTCSI11"		address="raw:0x36" />
+  	<symbol		  name="INTTM001"		address="raw:0x38" />
+  	<symbol		  name="INTTM011"		address="raw:0x3A" />
+  	
+  	<!-- Port Mode Registers -->
+  	<symbol		  name="P0"				address="raw:0xFF00" />
+  	<symbol		  name="P1"				address="raw:0xFF01" />
+  	<symbol		  name="P2"				address="raw:0xFF02" />
+  	<symbol		  name="P3"				address="raw:0xFF03" />
+  	<symbol		  name="P4"				address="raw:0xFF04" />
+  	<symbol		  name="P5"				address="raw:0xFF05" />
+  	<symbol		  name="P6"				address="raw:0xFF06" />
+  	<symbol		  name="P7"				address="raw:0xFF07" />
+  	
+  	<!-- A/D Conversion Result Register -->
+ 	<symbol		  name="ADCR"			address="raw:0xFF08" />
+ 	
+ 	<!-- Rx/Tx Buffer Register 6 -->
+ 	<symbol		  name="RXB6"			address="raw:0xFF0A" />
+ 	<symbol		  name="TXB6"			address="raw:0xFF0B" />
+ 	
+ 	<!-- Port Mode Registers -->
+ 	<symbol		  name="P12"			address="raw:0xFF0C" />
+ 	<symbol		  name="P13"			address="raw:0xFF0D" />
+ 	<symbol		  name="P14"			address="raw:0xFF0E" />
+ 	
+ 	<!-- Serial I/O Shift Register 10 -->
+ 	<symbol		  name="SIO10"			address="raw:0xFF0F" />
+ 	
+ 	<!-- 16-Bit Timer Register -->
+ 	<symbol		  name="TM00"			address="raw:0xFF10" />
+ 	<symbol		  name="CR000"			address="raw:0xFF12" />
+ 	<symbol		  name="CR010"			address="raw:0xFF14" />
+ 	
+ 	<!-- 8-Bit Timer Register -->
+ 	<symbol		  name="TM50"			address="raw:0xFF16" />
+ 	<symbol		  name="CR50"			address="raw:0xFF17" />
+ 	<symbol		  name="CMP00"			address="raw:0xFF18" />
+ 	<symbol		  name="CMP10"			address="raw:0xFF19" />
+ 	<symbol		  name="CMP01"			address="raw:0xFF1A" />
+ 	<symbol		  name="CMP11"			address="raw:0xFF1B" />
+ 	<symbol		  name="TM51"			address="raw:0xFF1F" />
+ 	
+ 	<!-- Port Mode Registers -->
+  	<symbol		  name="PM0"			address="raw:0xFF20" />
+  	<symbol		  name="PM1"			address="raw:0xFF21" />
+  	<symbol		  name="PM2"			address="raw:0xFF22" />
+  	<symbol		  name="PM3"			address="raw:0xFF23" />
+  	<symbol		  name="PM4"			address="raw:0xFF24" />
+  	<symbol		  name="PM5"			address="raw:0xFF25" />
+  	<symbol		  name="PM6"			address="raw:0xFF26" />
+  	<symbol		  name="PM7"			address="raw:0xFF27" />
+  	
+  	<!-- A/D Conversion Mode Register -->
+ 	<symbol		  name="ADM"			address="raw:0xFF28" />
+  	
+  	<!-- Analog Input Channel Specification Register -->
+ 	<symbol		  name="ADS"			address="raw:0xFF29" />
+  	
+  	<!-- Power-Fail Compensation Registers -->
+ 	<symbol		  name="PFM"			address="raw:0xFF2A" />
+ 	<symbol		  name="PFT"			address="raw:0xFF2B" />
+ 	
+ 	<!-- Port Mode Registers -->
+  	<symbol		  name="PM12"			address="raw:0xFF2C" />
+  	<symbol		  name="PM14"			address="raw:0xFF2E" />
+ 	
+ 	<!-- Pull-Up Resistor Option Registers -->
+  	<symbol		  name="PU0"			address="raw:0xFF30" />
+  	<symbol		  name="PU1"			address="raw:0xFF31" />
+  	<symbol		  name="PU3"			address="raw:0xFF33" />
+  	<symbol		  name="PU4"			address="raw:0xFF34" />
+  	<symbol		  name="PU5"			address="raw:0xFF35" />
+  	<symbol		  name="PU7"			address="raw:0xFF37" />
+  	
+ 	<!-- Correction Address Registers -->
+  	<symbol		  name="CORAD0"			address="raw:0xFF38" />
+  	<symbol		  name="CORAD1"			address="raw:0xFF3A" />
+ 	
+ 	<!-- Pull-Up Resistor Option Registers -->
+  	<symbol		  name="PU12"			address="raw:0xFF3C" />
+  	<symbol		  name="PU14"			address="raw:0xFF3E" />
+ 	
+ 	<!-- Clock Output Selection Register -->
+  	<symbol		  name="CKS"			address="raw:0xFF40" />
+  	
+ 	<!-- 8-Bit Timer Mode Registers -->
+  	<symbol		  name="CR51"			address="raw:0xFF41" />
+  	<symbol		  name="TMC51"			address="raw:0xFF43" />
+  	
+ 	<!-- External Interrupt Enable Registers -->
+  	<symbol		  name="EGP"			address="raw:0xFF48" />
+  	<symbol		  name="EGN"			address="raw:0xFF49" />
+  	
+ 	<!-- Serial I/O Shift Register 11 -->
+  	<symbol		  name="SIO11"			address="raw:0xFF4A" />
+  	
+ 	<!-- Transmit Buffer Register 11 -->
+  	<symbol		  name="SOTB11"			address="raw:0xFF4C" />
+  	
+ 	<!-- Input Switch Control Register -->
+  	<symbol		  name="ISC"			address="raw:0xFF4F" />
+  	
+ 	<!-- Async Serial Interface -->
+  	<symbol		  name="ASIM6"			address="raw:0xFF50" />
+  	<symbol		  name="ASIS6"			address="raw:0xFF53" />
+  	<symbol		  name="ASIF6"			address="raw:0xFF55" />
+  	<symbol		  name="CKSR6"			address="raw:0xFF56" />
+  	<symbol		  name="BRGC6"			address="raw:0xFF57" />
+  	<symbol		  name="ASICL6"			address="raw:0xFF58" />
+  	
+  	<!-- Mathematical Data Registers -->
+  	<!-- TODO: Sub-Registers exist here, they may need defining too? -->
+  	<symbol		  name="SDR0"			address="raw:0xFF60" />
+  	<symbol		  name="MDA0L"			address="raw:0xFF62" />
+  	<symbol		  name="MDA0H"			address="raw:0xFF64" />
+  	<symbol		  name="MDB0"			address="raw:0xFF66" />
+  	<symbol		  name="DMUC0"			address="raw:0xFF68" />
+  	
+  	<!-- 8-Bit Timer H Mode Registers -->
+  	<symbol		  name="TMHMD0"			address="raw:0xFF69" />
+  	<symbol		  name="TCL50"			address="raw:0xFF6A" />
+  	<symbol		  name="TMC50"			address="raw:0xFF6B" />
+  	<symbol		  name="TMHMD1"			address="raw:0xFF6C" />
+  	<symbol		  name="TMCYC1"			address="raw:0xFF6D" />
+  	
+  	<!-- Key Return Mode Register -->
+  	<symbol		  name="KRM"			address="raw:0xFF6E" />
+  	
+  	<!-- Watch Timer Mode Register -->
+  	<symbol		  name="WTM"			address="raw:0xFF6F" />
+  	
+  	<!-- Async Serial Interface Operation Mode 0 Register -->
+  	<symbol		  name="ASIM0"			address="raw:0xFF70" />
+  	
+  	<!-- Baud Rate Generator Control 0 Register -->
+  	<symbol		  name="BRGC0"			address="raw:0xFF71" />
+  	
+  	<!-- Receive Buffer 0 Register -->
+  	<symbol		  name="RXB0"			address="raw:0xFF72" />
+  	
+  	<!-- Async Serial Interface Reception Error Status 0 Register -->
+  	<symbol		  name="ASIS0"			address="raw:0xFF73" />
+  	
+  	<!-- Transmit Shift 0 Register -->
+  	<symbol		  name="TXS0"			address="raw:0xFF74" />
+  	
+  	<!-- Serial Operation Mode 10 Register -->
+  	<symbol		  name="CSIM10"			address="raw:0xFF80" />
+  	
+  	<!-- Serial Clock Selection Mode 10 Register -->
+  	<symbol		  name="CSIC10"			address="raw:0xFF81" />
+  	
+  	<!-- Transmit Buffer 10 Register -->
+  	<symbol		  name="SOTB10"			address="raw:0xFF84" />
+  	
+  	<!-- Serial Operation Mode 11 Register -->
+  	<symbol		  name="CSIM11"			address="raw:0xFF88" />
+  	
+  	<!-- Serial Clock Selection 11 Register -->
+  	<symbol		  name="CSIC11"			address="raw:0xFF89" />
+  	
+  	<!-- Correction Control Register -->
+  	<symbol		  name="CORCN"			address="raw:0xFF8A" />
+  	
+  	<!-- Timer Clock Selection 51 Register -->
+  	<symbol		  name="TCL51"			address="raw:0xFF8C" />
+  	
+  	<!-- Watch-Dog Timer Control Registers -->
+  	<symbol		  name="WDTM"			address="raw:0xFF98" />
+  	<symbol		  name="WDTE"			address="raw:0xFF99" />
+  	
+  	<!-- Clock Control Registers -->
+  	<symbol		  name="RCM"			address="raw:0xFFA0" />
+  	<symbol		  name="MCM"			address="raw:0xFFA1" />
+  	<symbol		  name="MOC"			address="raw:0xFFA2" />
+  	<symbol		  name="OSTC"			address="raw:0xFFA3" />
+  	<symbol		  name="OSTS"			address="raw:0xFFA4" />
+  	<symbol		  name="CLM"			address="raw:0xFFA9" />
+  	<symbol		  name="RESF"			address="raw:0xFFAC" />
+  	
+  	<!-- 16-Bit Timer Counter Registers -->
+  	<symbol		  name="TM01"			address="raw:0xFFB0" />
+  	<symbol		  name="CR001"			address="raw:0xFFB2" />
+  	<symbol		  name="CR011"			address="raw:0xFFB4" />
+  	<symbol		  name="TMC01"			address="raw:0xFFB6" />
+  	<symbol		  name="PRM01"			address="raw:0xFFB7" />
+  	<symbol		  name="CRC01"			address="raw:0xFFB8" />
+  	<symbol		  name="TOC01"			address="raw:0xFFB9" />
+  	<symbol		  name="TMC00"			address="raw:0xFFBA" />
+  	<symbol		  name="PRM00"			address="raw:0xFFBB" />
+  	<symbol		  name="CRC00"			address="raw:0xFFBC" />
+  	<symbol		  name="TOC00"			address="raw:0xFFBD" />
+  	
+  	<!-- Low-Voltage Detection Registers -->
+  	<symbol		  name="LVIM"			address="raw:0xFFBE" />
+  	<symbol		  name="LVIS"			address="raw:0xFFBF" />
+  	
+  	<!-- Interrupt Flag Registers -->
+  	<!-- TODO: Sub-Registers exist here, they may need defining too? -->
+  	<symbol		  name="IF0"			address="raw:0xFFE0" />
+  	<symbol		  name="IF1"			address="raw:0xFFE2" />
+  	<symbol		  name="MK0"			address="raw:0xFFE4" />
+  	<symbol		  name="MK1"			address="raw:0xFFE6" />
+  	<symbol		  name="PR0"			address="raw:0xFFE8" />
+  	<symbol		  name="PR1"			address="raw:0xFFEA" />
+  	
+  	<!-- Internal Memory Size Switching Register -->
+  	<symbol		  name="IMS"			address="raw:0xFFF0" />
+  	
+  	<!-- Internal Expansion RAM Size Switching Register -->
+  	<symbol		  name="IXS"			address="raw:0xFFF4" />
+  	
+  	<!-- Processor Clock Control Register -->
+  	<symbol		  name="PCC"			address="raw:0xFFFB" />
+  </default_symbols>
+  
+  <default_memory_blocks>
+  	<memory_block name="FLASH_VECTOR_TABLE" start_address="flash:0x0" 			length="0x40"		byte_mapped_address="raw:0x0"/>
+  	<memory_block name="FLASH_CALLT_TABLE" 	start_address="flash:0x40" 			length="0x40"		byte_mapped_address="raw:0x40"/>
+  	<memory_block name="FLASH_PROG1" 		start_address="flash:0x80" 			length="0x780"		byte_mapped_address="raw:0x80"/>
+  	<memory_block name="FLASH_CALLF_TABLE" 	start_address="flash:0x800" 		length="0x800"		byte_mapped_address="raw:0x800"/>
+  	<memory_block name="FLASH_PROG2" 		start_address="flash:0x1000" 		length="0xE000"		byte_mapped_address="raw:0x1000"/>
+  	
+  	<memory_block name="RESERVED_1" 		start_address="flash:0xF000" 		length="0x400"		byte_mapped_address="raw:0xF000"/>
+  	
+  	<memory_block name="EXP_RAM" 			start_address="flash:0xF400" 		length="0x400"		byte_mapped_address="raw:0xF400"/>
+  	
+  	<memory_block name="RESERVED_2"			start_address="flash:0xF800"		length="0x300"		byte_mapped_address="raw:0xF800"/>
+  	
+  	<memory_block name="HS_RAM"				start_address="flash:0xFB00"		length="0x400"		byte_mapped_address="raw:0xFB00"/>
+  	
+  	<memory_block name="SFR"				start_address="flash:0xFF00"		length="0x100"		byte_mapped_address="raw:0xFF00"/>
+  </default_memory_blocks>
+  
+</processor_spec>

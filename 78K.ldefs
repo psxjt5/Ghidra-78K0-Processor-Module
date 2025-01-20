@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- See Relax specification: Ghidra/Framework/SoftwareModeling/data/languages/language_definitions.rxg -->
+
+<language_definitions>
+	<language processor="78K"
+            endian="little"
+            size="16"
+            variant="default"
+            version="1.0"
+            slafile="78K.sla"
+            processorspec="78K.pspec"
+            id="78K:LE:16:default">
+		<description>NEC/Renesas 78K/0 8-Bit Microcontroller Family</description>
+		<compiler name="default" spec="78K.cspec" id="default"/>
+	</language> 
+</language_definitions>
+
+
