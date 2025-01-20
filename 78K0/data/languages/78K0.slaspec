@@ -1,0 +1,53 @@
+# sleigh specification file for NEC 78K0
+
+## General Parameters
+define endian=little;
+define alignment=1;
+
+## Space Definitions
+#define space ram 		type=ram_space 		size=2 		default;
+#define space register 	type=register_space size=2;
+define space raw type=ram_space size=2 default;
+define space flash type=ram_space size=2;
+define space register type=register_space size=2;
+
+## Register Definitions
+
+# General Purpose Registers
+define register offset=0 size=2 [ AX BC DE HL ];
+define register offset=0 size=1 [ X A C B E D L H ];
+
+# PC and SP
+define register offset=0x40 size=2 [ PC SP ];
+
+# PSW
+define register offset=0x60 size=1 [ PSW ];
+
+# IE - Interrupt Enable
+# Z - Zero Flag
+# RBS1 - Register Bank Select 1
+# AC - Aux Carry
+# RBS0 - Register Bank Select 0
+# 0 - Unused?
+# ISP - In-Service Priority Flag
+# CY - Carry Flag
+
+#define bitrange IE		=	PSW[7, 1]
+#				Z		=	PSW[6, 1]
+#				RBS1	=	PSW[5, 1]
+#				AC		=	PSW[4, 1]
+#				RBS0	=	PSW[3, 1]
+#				ISP		=	PSW[1, 1]
+#				CY		=	PSW[0, 1];
+				
+@define IE_Flag		"PSW[7, 1]"		# Interrupt Enable (IE)
+@define Z_Flag		"PSW[6, 1]"		# Zero Flag (ZF)
+@define RBS1_Flag	"PSW[5, 1]"		# Register Bank Select Hi-Bit (RBS1)
+@define AC_Flag		"PSW[4, 1]"		# Aux Carry Flag (AC)
+@define RBS0_Flag	"PSW[3, 1]"		# Register Bank Select Lo-Bit (RBS0)
+@define ISP_Flag	"PSW[1, 1]"		# In-Service Priority (ISP)
+@define CY_Flag		"PSW[0, 1]"		# Carry Flag (CY)
+
+
+# Include contents of 78K.sinc file
+@include "78K0.sinc"
